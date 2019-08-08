@@ -49,7 +49,6 @@ else{
 console.log(q4);
 
 var q5 = confirm('Is coding challeging but incredably fun?!');
-
 answers.push(q5);
 
 if(q5){
@@ -61,7 +60,6 @@ else{
 console.log(q5);
 
 answers.push(cities);
-
 for(var i = 0; i <= 4; i++){
   var cities = prompt('How many cities have I lived in?');
   switch(cities.toLowerCase()){
@@ -93,6 +91,7 @@ for(var i = 0; i <= 4; i++){
 
   }}
 
+answers.push(q7);
 
 var numbOfCountries = ['usa', 'canada', 'equador', 'mexico' ];
 
@@ -103,7 +102,6 @@ for(var i = 0; i <= 5; i++){
     alert('You are correct!!');
     alert('You got ' + answers.indexOf() + ' out of 7' );
     numbOfCountries.remove(q7);
-    answers.push(q7);
   }
   else {
     console.log('Wrong');
