@@ -1,5 +1,8 @@
 body{
     background-image: url(../img/waves.jpg!d);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.6);
        
 }
 h1{
@@ -15,72 +18,99 @@ h1{
   text-shadow: 4px 4px red;
   height: 1.5em;
   line-height: 1.5em;
+
 }
 
 h2{
     color: darkgreen;
     text-align: center;
     font-size: 3em;
-    
+    font-weight: bold;
 }
 #bio{
     color: rgb(39, 39, 19);
     text-align: center;
-    font-size: 1.25em;
-    /* padding-right: 25%;
-    padding-left: 25%; */
-   }
+    font-size: 2em;
+    font-weight: bold;
+    padding: 5%;
     
+   }
 
 #question_1{
 font-size: 2em;
 color: aqua;
 text-align:center;
+font-weight: bold;
 }
 
 #question_2{
 font-size: 2em;
 color:coral;
 text-align:center;
+font-weight: bold;
 }
 
 #question_3{
 font-size: 2em;
 color: darkblue;
 text-align:center;
+font-weight: bold;
 }
 
 #question_4{
 font-size: 2em;
 color:rgb(107, 27, 131);
 text-align:center;
+font-weight: bold;
 }
 
 #question_5{
 font-size: 2em;
+color: rgb(221, 85, 6);
+text-align:center;
+font-weight: bold;
+}
+
+#question_6{
+font-size: 2em;
+color: rgb(133, 67, 180);
+text-align:center;
+font-weight: bold;
+}
+
+#question_7{
+font-size: 2em;
 color: indigo;
 text-align:center;
+font-weight: bold;
+}
+
+
+h3{
+color: darkgreen;
+text-align: center;
+font-size: 3em;
+font-weight: bold;
+text-decoration-line: underline
+}
+
+#top10{
+color: lawngreen;
+padding-left: 43%;
+font-size: 2em;
+font-weight: bold;
+
 }
 
 #footer{
-position: absolute;
 bottom: 0;
 width: 100%;
 text-align:center;
-
 }
 
-h2{
-color: rgb(39, 39, 19);
-text-align: center;
-font-size: 1.25em;
-padding-left: 75%;
-float: right;
-object-position: 10%;
-
+p.solid {
+    border-style: solid;
 }
-
-p.solid {border-style: solid;}
 
 hr{
     width: 25%;  
