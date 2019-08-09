@@ -1,8 +1,10 @@
 body{
+    background-color: dimgrey;
     background-image: url(../img/waves.jpg!d);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-size: 75% 25%;
+     
+    
        
 }
 h1{
