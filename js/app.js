@@ -1,13 +1,17 @@
+// 'use strict';
 
+// var score=0;
 
-// var score=0
+// var whatName = prompt('what is you name?');
+// alert(whatName + ', thank you for coming to my page!');
+// console.log(whatName);
 
 // //Question 1
-// var hobby = confirm('Is scuba diving the greatest hobby know to man? (y or n)');
+// var hobby = prompt('Is scuba diving the greatest hobby know to man? (y or n)');
 
 
 // function questionHobby() {
-//   if(hobby) {
+//   if(hobby.startsWith('y')) {
 //     alert('You are absolutely correct!!');
 //     score++;
 //   }
@@ -36,11 +40,11 @@
 
 // //Question 3
 // function questionFish() {
-//   var fish = prompt('Is the Grunt Sculpin the coolest fish in the sea?').toLowerCase();
+//   var fish = prompt('Is the Grunt Sculpin my favorite fish in the sea?').toLowerCase();
 
 
 //   if(fish.startsWith('y')){
-//     alert('HELLS to the Yeah!');
+//     alert('HELLS to the Yeah they are!');
 //     score++;
 //   }
 //   else{
@@ -52,10 +56,10 @@
 
 // //Question 4
 // function questionDiver() {
-//   var q4 = confirm('Am I an awsome scuba Diver Master?');
+//   var q4 = prompt('Am I an awsome scuba Diver Master?').toLowerCase();
 
 
-//   if(q4){
+//   if(q4.startsWith('y')){
 //     alert('Absolutely!!');
 //     score++;
 //   }
@@ -68,10 +72,10 @@
 
 // //Question 5
 // function questionCoding() {
-//   var q5 = confirm('Is coding challeging but incredably fun?!');
+//   var q5 = prompt('Is coding challeging but incredably fun?!').toLowerCase();
 
-//   if(q5){
-//     alert('Correct! It most certainly is!!');
+//   if(q5.startsWith('y')){
+//     alert('Correct! It most certainly is and i LOVE IT!!');
 //     score++;
 //   }
 //   else{
@@ -81,49 +85,49 @@
 // }
 // questionCoding();
 
-// //Question 6
+// // Question 6
+// var tries = 0;
+// var guessRight = false;
+
 // function questionCities() {
-//   for(var i = 0; i <= 4; i++){
-//     var cities = prompt('How many cities have I lived in?');
-//     switch(cities.toLowerCase()){
-//     case '1':
-//       console.log('To low!');
-//       alert('To low! Try again.');
-//       break;
-//     case '2':
-//       console.log('To low!');
-//       alert('To low! Try again.');
-//       break;
-//     case '3':
-//       console.log('Correct');
-//       alert('Correct!');
+//   for(var guesses = 1; guesses <= 4; guesses++) {
+//     tries++;
+//     var q6 = parseInt(prompt('how many cities have i lived in?'));
+//     if(q6 === 4){
+//       alert('You are correct. I have lived in 4 cites (Federal Way, Kent. Black Diamond, and Auburn.');
+//       console.log('cities lived in, Correct');
 //       score++;
-//       i = 4;
+//       guessRight = true;
 //       break;
-//     case '4':
-//       console.log('To high!');
-//       alert('To high! Try again.');
-//       break;
-//     case 'deafult':
-//       console.log('Not a number');
-//       alert('Not a number from 1 to 6');
-//       break;
-//     }}
+//     }
+//     else if(q6 > 4){
+//       alert('You are to high. Please try again.');
+//       console.log('wrong, to high');
+//     }
+//     else if(q6 < 4){
+//       alert('You are to low. Please try agian');
+//       console.log('wrong: to low');
+//     }
+//   }
+//   alert('After, ' + tries + ' guesses, you are ' + guessRight);
 // }
 // questionCities();
 
-// //Question 7
+// // Question 7
 // var numbOfCountries = ['usa', 'canada', 'equador', 'mexico' ];
 
 // function questionCountries() {
-//   for(var i = 0; i <= 5; i++){
+//   for(var i = 0; i <= 6; i++){
 //     var q7 = prompt('What countries have I been to?').toLowerCase();
 //     if(numbOfCountries.includes(q7)){
-//       console.log('Correct');
-//       alert('You are correct!!');
+//       console.log('Correct' + q7);
+//       alert('You are correct!! I have been to the USA, canada, equador, and mexico.');
 //       score++;
-//       alert('You got ' + score + ' out of 7');
 //       numbOfCountries.remove(q7);
+//     }
+//     if (i === 6 ){
+//       console.log('answer was wrong');
+//       alert('Good try but you ran out of guesses. I have been to the usa, canada, equador, and mexico.');
 //     }
 //     else {
 //       console.log('Wrong');
@@ -132,3 +136,4 @@
 //   }
 // }
 // questionCountries();
+// alert('You got ' + score + ' out of 7');

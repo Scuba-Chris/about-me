@@ -1,8 +1,11 @@
 body{
-    background-color: dimgrey;
+    background-color: darkblue;
     background-image: url(../img/waves.jpg!d);
     background-repeat: no-repeat;
-    background-size: 75% 25%;
+    background-position: center center;
+    background-size: 65% 50%;
+    background-attachment: fixed;
+
      
     
        
@@ -26,17 +29,26 @@ h1{
 h2{
     color: darkgreen;
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
+    text-decoration-line: underline;
+    
 }
 #bio{
     color: rgb(39, 39, 19);
-    text-align: center;
-    font-size: 2em;
+    margin-left: 200px;
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 5%;
+    text-align: left;
     
    }
+.bio{
+    color: rgb(39, 39, 19);
+    margin-left: 200px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+}
 
 #question_1{
 font-size: 2em;
